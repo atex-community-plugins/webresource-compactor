@@ -15,9 +15,9 @@ Installation
 
 +-------------------------------+
     <dependency>
-      <groupId>com.atex.gong</groupId>
-      <artifactId>webresource-compactor</artifactId>
-      <version>${gong.version}</version>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>${project.artifactId}</artifactId>
+      <version>${project.version}</version>
       <type>jar</type>
     </dependency>
 +-------------------------------+

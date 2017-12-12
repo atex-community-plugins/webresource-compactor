@@ -19,10 +19,17 @@ and replace it with:
     <dependency>
       <groupId>com.atex.gong</groupId>
       <artifactId>webresource-compactor</artifactId>
-      <version>${gong.version}</version>
+      <version>${webresource.version}</version>
       <type>jar</type>
     </dependency>
 ```
+
+Where `${webresource.version}` can be:
+
+| Version | Gong Version |
+|---------|--------------|
+| 1.0     | 2.3          |
+
 
 ## Polopoly Version
 10.16.3

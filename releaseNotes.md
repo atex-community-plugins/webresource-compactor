@@ -1,7 +1,7 @@
 RELEASE NOTES
 =============
 
-## 2.3
+## 1.0
 
 - [view commit](https://github.com/atex-community-plugins/webresource-compactor/commit/ddb3f1d5b104bcf4c92b49c58303ad46be9e28df) Added deploy guide.
 - [view commit](https://github.com/atex-community-plugins/webresource-compactor/commit/f8d1a543fbe13a38e6dba5674df1d0ad0c774c4c) Added license information
