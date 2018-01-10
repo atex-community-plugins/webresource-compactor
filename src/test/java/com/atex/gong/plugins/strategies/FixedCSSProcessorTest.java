@@ -49,10 +49,31 @@ public class FixedCSSProcessorTest {
         Assert.assertEquals("url(/pluto)", replace("url(/pluto)"));
         Assert.assertEquals("url('/pluto')", replace("url('/pluto')"));
         Assert.assertEquals("url(data:application/font-woff;charset=utf-8;base64,)", replace("url(data:application/font-woff;charset=utf-8;base64,)"));
+        Assert.assertEquals("url('/pippo/../fonts/fontawesome-webfont.eot?v=4.1.0')", replace("url('../fonts/fontawesome-webfont.eot?v=4.1.0')"));
+    }
+
+    @Test
+    public void testReplaceRelativeUrlsWithoutFinalSlash() {
+        Assert.assertEquals("url(/pippo/pluto)", replaceN("url(pluto)"));
+        Assert.assertEquals("url('/pippo/pluto')", replaceN("url('pluto')"));
+        Assert.assertEquals("url(\"/pippo/pluto\")", replaceN("url(\"pluto\")"));
+        Assert.assertEquals("url(/pippo/pluto/paperino )", replaceN("url( pluto/paperino )"));
+        Assert.assertEquals("url(http://pluto)", replaceN("url(http://pluto)"));
+        Assert.assertEquals("url(https://pluto)", replaceN("url(https://pluto)"));
+        Assert.assertEquals("url('http://pluto')", replaceN("url('http://pluto')"));
+        Assert.assertEquals("url(\"https://pluto\")", replaceN("url(\"https://pluto\")"));
+        Assert.assertEquals("url(/pluto)", replaceN("url(/pluto)"));
+        Assert.assertEquals("url('/pluto')", replaceN("url('/pluto')"));
+        Assert.assertEquals("url(data:application/font-woff;charset=utf-8;base64,)", replaceN("url(data:application/font-woff;charset=utf-8;base64,)"));
+        Assert.assertEquals("url('/pippo/../fonts/fontawesome-webfont.eot?v=4.1.0')", replaceN("url('../fonts/fontawesome-webfont.eot?v=4.1.0')"));
     }
 
     private String replace(final String url) {
         return processor.replaceRelativeUrls(url, "/pippo/");
+    }
+
+    private String replaceN(final String url) {
+        return processor.replaceRelativeUrls(url, "/pippo");
     }
 
 }

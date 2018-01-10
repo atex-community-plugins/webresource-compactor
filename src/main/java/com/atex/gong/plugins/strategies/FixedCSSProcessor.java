@@ -71,6 +71,9 @@ public class FixedCSSProcessor implements ResourceProcessor {
     }
 
     String replaceRelativeUrls(String css, String baseUrl) {
+        if (baseUrl != null && !baseUrl.endsWith("/")) {
+            baseUrl += "/";
+        }
         return URL_RE.matcher(css).replaceAll("url($1" + baseUrl);
     }
 
