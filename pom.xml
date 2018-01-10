@@ -20,7 +20,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <polopoly.version>10.16.3-fp3</polopoly.version>
+    <polopoly.version>10.16.5</polopoly.version>
   </properties>
 
   <scm>
