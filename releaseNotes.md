@@ -1,6 +1,11 @@
 RELEASE NOTES
 =============
 
+## 1.1
+
+- [view commit](https://github.com/atex-community-plugins/webresource-compactor/commit/b9c044dbd7f52a9c8021802f8a9eade632a5a723) Fixed some compatibility issues with fontawesone and relative urls.
+- [view commit](https://github.com/atex-community-plugins/webresource-compactor/commit/665201e6cb52f91ab143a5d1fbf39128514f9634) Bump polopoly version to 10.16.5
+
 ## 1.0
 
 - [view commit](https://github.com/atex-community-plugins/webresource-compactor/commit/ddb3f1d5b104bcf4c92b49c58303ad46be9e28df) Added deploy guide.

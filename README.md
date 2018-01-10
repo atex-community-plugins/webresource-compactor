@@ -29,10 +29,12 @@ Where `${webresource.version}` can be:
 | Version | Gong Version |
 |---------|--------------|
 | 1.0     | 2.3          |
+| 1.1     | 2.5          |
+
 
 
 ## Polopoly Version
-10.16.3
+10.16.5
 
 ## Code Status
 The code in this repository is provided with the following status: **PROJECT**
